@@ -12,8 +12,9 @@
         <%= @blog_content %>
       </p>
     </div>
-    <div class="col-md-3 col-md-offset-1 top-margin border">
-      <h6>More Blog Entries</h6>
+    <div class="col-md-3 col-md-offset-1 top-margin side-bar">
+      <%= image_tag "highway.jpg", class: "side-bar-photo" %>
+      <h4 class="top-margin">More Blog Entries</h4>
       <ul class="other_blog_entries">
         <% BlogPost.all.each do |post| %>
           <li><%= link_to post.blog_title %></li>
