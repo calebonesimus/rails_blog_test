@@ -1,0 +1,15 @@
+<div class="container top-margin">
+  <div class="row">
+    <%= form_for :blog_post do |f| %>
+
+      <%= f.label :blog_title, "Blog Title"%>
+      <%= f.text_field :blog_title, placeholder: "blog title...", class: "form-control"%>
+
+      <%= f.label :blog_content, "Blog Entry", class: "top-margin" %>
+      <%= f.text_area :blog_content, placeholder: "Write your blog here...", rows: 8, class: "form-control" %>
+
+      <%= f.submit "Save blog", class: "btn btn-primary top-margin" %>
+
+    <% end %>
+  </div>
+</div>

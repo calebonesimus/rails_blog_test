@@ -1,0 +1,2 @@
+module WriteBlogHelper
+end
