@@ -4,6 +4,5 @@ Rails.application.routes.draw do
 
   get 'blog' => 'view_blog#view'
 
-  root 'welcome#index'
-
+  get '/(:name)' => 'welcome#index'
 end
